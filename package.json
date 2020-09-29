@@ -1,0 +1,29 @@
+{
+  "name": "sellart",
+  "version": "1.0.0",
+  "description": "Little app to sell some art",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinDuban/SellArt.git"
+  },
+  "author": "Justin Duban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinDuban/SellArt/issues"
+  },
+  "homepage": "https://github.com/JustinDuban/SellArt#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
